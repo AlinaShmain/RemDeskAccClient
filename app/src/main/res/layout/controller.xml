@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/TouchPad"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/keyboardbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:onClick="keyClickHandler"
+                android:text="  K  ">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:id="@+id/ButtonGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:text="L"
+                android:id="@+id/LeftClickButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+
+            <Button android:text="R"
+                android:id="@+id/RightClickButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <!--	android:onClick="RightButtonClickHandler">-->
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- This EditText remains hidden. It is used to send keyboard events to the server -->
+    <EditText
+        android:id="@+id/KeyBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textVisiblePassword"
+        android:layout_gravity="right"
+        android:focusable="true"
+        android:imeOptions="flagNoFullscreen"></EditText>
+
+</LinearLayout>

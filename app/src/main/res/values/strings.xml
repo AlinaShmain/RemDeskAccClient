@@ -1,0 +1,5 @@
+<resources>
+    <string name="hello">Hello World, Touch!</string>
+    <string name="app_name">RemoteDesktopAccess</string>
+    <string name="buttonHandler">clickHandler</string>
+</resources>
